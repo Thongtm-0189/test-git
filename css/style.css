@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #f8d57e;
-    --light: #bde3ff;
+    --primary: #FE5D37;
+    --light: #FFF5F3;
     --dark: #103741;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .btn.btn-primary {
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .btn-square {
@@ -98,11 +98,17 @@ h6,
 
 
 /*** Navbar ***/
+
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
     color: var(--dark);
     font-weight: 500;
     outline: none;
+    font-size: 17px;
+}
+
+.navbar-brand-logo{
+    width: 240px;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -174,6 +180,10 @@ h6,
     left: 0;
     background: url(../img/bg-header-top.png) center center repeat-x;
     z-index: 1;
+}
+
+.btn-search{
+    top: 0;
 }
 
 .header-carousel::after,
@@ -500,4 +510,93 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/*FEEDBACK*/
+.feedback p{
+    margin: 0;
+}
+.feedback-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-user-icon{
+    padding-top: 30px;
+    font-size: 200px;
+}
+
+.feedback-user button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #f8d57e;
+    color: white;
+}
+
+.feedback-user button:hover{
+    background-color: var(--primary);
+}
+
+.feedback-title{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.feedback-content-items{
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    height: auto;
+}
+.feedback-content-item{
+    padding-bottom: 5px;
+}
+
+.feedback-content-items .feedback-content-icon{
+   display: flex;
+   justify-content: flex-end;
+}
+.feedback-content-icon i{
+    padding: 0 10px;
+}
+
+.info-content{
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+.info-content-items{
+    display: flex;
+    background-color: #f4f0cc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px;
+}
+.info-content-item{
+    align-items: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.btn-controll-info{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    float: right;
+    margin-left: 20px;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
